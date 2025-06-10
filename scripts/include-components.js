@@ -1,19 +1,35 @@
 // Function to include HTML components
 async function includeHTML() {
-    // Load header component
-    const headerElement = document.querySelector('[data-component="header"]');
-    if (headerElement) {
+    const elements = document.querySelectorAll('[data-component]');
+    
+    for (const element of elements) {
         try {
-            const response = await fetch('/components/header.html');
-            const html = await response.text();
-            headerElement.innerHTML = html;
-            // Dispatch event when components are loaded
-            document.dispatchEvent(new Event('componentsLoaded'));
+            const file = element.getAttribute('data-component');
+            const response = await fetch(file);
+            
+            if (response.ok) {
+                const html = await response.text();
+                element.innerHTML = html;
+                
+                // Execute any scripts in the component
+                const scripts = element.getElementsByTagName('script');
+                Array.from(scripts).forEach(script => {
+                    const newScript = document.createElement('script');
+                    Array.from(script.attributes).forEach(attr => {
+                        newScript.setAttribute(attr.name, attr.value);
+                    });
+                    newScript.textContent = script.textContent;
+                    script.parentNode.replaceChild(newScript, script);
+                });
+            }
         } catch (error) {
-            console.error('Error loading header component:', error);
+            console.error('Error loading component:', error);
         }
     }
+    
+    // Dispatch event when all components are loaded
+    document.dispatchEvent(new Event('componentsLoaded'));
 }
 
-// Run when the DOM is fully loaded
+// Run when the DOM is loaded
 document.addEventListener('DOMContentLoaded', includeHTML); 
