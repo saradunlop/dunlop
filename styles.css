@@ -335,17 +335,22 @@ nav a.active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin: 4rem auto;
-    max-width: 1200px;
+    margin: 4rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-gallery img.in-view {
