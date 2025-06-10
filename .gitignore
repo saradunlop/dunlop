@@ -66,6 +66,7 @@ build/
 # Backup directories
 backup/
 backups/
+*.bak
 
 # Logs
 *.log
