@@ -1,0 +1,64 @@
+<!-- Project Page Template -->
+<article class="project-detail">
+    <div class="project-hero video" data-scroll>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/{{vimeo_id}}?title=0&byline=0&portrait=0" 
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    
+    <div class="project-info" data-scroll>
+        <h1>{{title}}</h1>
+        <div class="project-meta">
+            <p>{{category}}</p>
+            {{#client}}<p>Client: {{client}}</p>{{/client}}
+            {{#agency}}<p>Agency: {{agency}}</p>{{/agency}}
+            <p>Year: {{year}}</p>
+        </div>
+        <div class="project-description">
+            <p>{{description}}</p>
+        </div>
+    </div>
+
+    <div class="project-gallery">
+        {{#gallery_images}}
+        <img src="{{url}}" alt="{{alt}}" data-scroll>
+        {{/gallery_images}}
+    </div>
+
+    {{#has_credits}}
+    <div class="project-credits" data-scroll>
+        <h2>Credits</h2>
+        <ul>
+            {{#credits}}
+            <li>{{role}}: {{name}}</li>
+            {{/credits}}
+        </ul>
+    </div>
+    {{/has_credits}}
+
+    {{#has_awards}}
+    <div class="awards" data-scroll>
+        <h2>Awards</h2>
+        <ul>
+            {{#awards}}
+            <li>{{award}}</li>
+            {{/awards}}
+        </ul>
+    </div>
+    {{/has_awards}}
+</article>
+
+<nav class="project-navigation" data-scroll>
+    {{#prev_project}}
+    <a href="{{url}}" class="prev-project">← {{title}}</a>
+    {{/prev_project}}
+    {{#next_project}}
+    <a href="{{url}}" class="next-project">{{title}} →</a>
+    {{/next_project}}
+</nav> 

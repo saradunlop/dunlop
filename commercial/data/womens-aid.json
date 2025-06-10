@@ -1,0 +1,70 @@
+{
+    "title": "Women's Aid",
+    "category": "Commercial",
+    "client": "Women's Aid",
+    "agency": "Engine Creative",
+    "year": "2023",
+    "description": "A powerful campaign that brings attention to domestic abuse and coercive control, using innovative storytelling techniques to highlight the often invisible nature of psychological abuse.",
+    "vimeo_id": "000000001",
+    "gallery_images": [
+        {
+            "url": "https://picsum.photos/800/450?random=1",
+            "alt": "Women's Aid Campaign Still 1"
+        },
+        {
+            "url": "https://picsum.photos/800/450?random=2",
+            "alt": "Women's Aid Campaign Still 2"
+        },
+        {
+            "url": "https://picsum.photos/800/450?random=3",
+            "alt": "Women's Aid Campaign Still 3"
+        },
+        {
+            "url": "https://picsum.photos/800/450?random=4",
+            "alt": "Women's Aid Campaign Still 4"
+        }
+    ],
+    "has_credits": true,
+    "credits": [
+        {
+            "role": "Director",
+            "name": "Sara Dunlop"
+        },
+        {
+            "role": "Production Company",
+            "name": "Rattling Stick"
+        },
+        {
+            "role": "Agency",
+            "name": "Engine Creative"
+        },
+        {
+            "role": "Creative Director",
+            "name": "Christopher Ringsell"
+        },
+        {
+            "role": "DOP",
+            "name": "Chayse Irvin ASC"
+        },
+        {
+            "role": "Editor",
+            "name": "Amanda James"
+        }
+    ],
+    "has_awards": true,
+    "awards": [
+        {
+            "award": "Cannes Lions - Gold Lion for Film"
+        },
+        {
+            "award": "D&AD - Yellow Pencil for Direction"
+        },
+        {
+            "award": "British Arrows - Gold for Social Impact"
+        }
+    ],
+    "next_project": {
+        "url": "/commercial/nike-cant-stop.html",
+        "title": "Nike: You Can't Stop Us"
+    }
+} 
