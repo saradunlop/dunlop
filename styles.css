@@ -665,10 +665,10 @@ footer {
 
 /* Awards section styling to match Recognition */
 .project-detail .awards {
-    margin: 2rem auto !important;
+    margin: 2rem 0 !important;
     max-width: 100% !important;
     width: 100% !important;
-    padding: 0 var(--page-padding) !important;
+    padding: 0 2rem !important;
     text-align: left !important;
     opacity: 1 !important;
     transform: none !important;
