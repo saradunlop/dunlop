@@ -664,18 +664,17 @@ footer {
 }
 
 /* Awards section styling to match Recognition */
-.project-detail .awards {
+.project-hero .awards {
     margin: 2rem 0 !important;
     max-width: 100% !important;
     width: 100% !important;
-    padding: 0 2rem !important;
     text-align: left !important;
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
 }
 
-.project-detail .awards h2 {
+.project-hero .awards h2 {
     font-size: 0.9rem !important;
     font-weight: 400 !important;
     margin-bottom: 0.75rem !important;
@@ -684,13 +683,13 @@ footer {
     color: var(--text-color) !important;
 }
 
-.project-detail .awards ul {
+.project-hero .awards ul {
     list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.project-detail .awards li {
+.project-hero .awards li {
     margin-bottom: 0.5rem !important;
     font-size: 0.9rem !important;
     line-height: 1.4 !important;
@@ -700,7 +699,7 @@ footer {
 }
 
 /* Remove any remaining animation classes */
-.project-detail .awards.in-view {
+.project-hero .awards.in-view {
     opacity: 1 !important;
     transform: none !important;
 }
