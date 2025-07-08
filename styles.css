@@ -636,33 +636,31 @@ footer {
 }
 
 .project-detail .awards {
-    max-width: 800px !important;
-    margin: 6rem auto 4rem !important;
-    text-align: left !important;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-detail .awards h2 {
-    font-size: 2rem !important;
-    font-weight: 400 !important;
-    margin-bottom: 2rem !important;
-    letter-spacing: 0.5px !important;
-    color: #000 !important;
-    text-align: left !important;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .project-detail .awards ul {
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: left !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .project-detail .awards li {
-    margin-bottom: 1rem !important;
-    color: #666 !important;
-    font-size: 1rem !important;
-    line-height: 1.4 !important;
-    text-align: left !important;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-color);
 }
 
 /* Keep existing project-credits styles */
