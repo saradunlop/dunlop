@@ -5,26 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Walk - Sara Dunlop</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts/include-components.js" defer></script>
     <script src="../scripts.js" defer></script>
 </head>
 <body class="project-page">
-    <header>
-        <h1><a href="../index.html">SARA DUNLOP</a></h1>
-        <nav>
-            <a href="./index.html">NARRATIVE</a>
-            <a href="../commercial/index.html">COMMERCIAL</a>
-            <a href="../info/index.html">INFO</a>
-            <button class="theme-toggle" aria-label="Toggle dark mode">
-                <span class="theme-toggle-text">DARK</span>
-            </button>
-        </nav>
-    </header>
+    <div data-component="/dunlop/components/header.html"></div>
 
     <main>
         <article class="project-detail">
             <div class="project-hero video" data-scroll>
                 <div style="padding:56.25% 0 0 0;position:relative;">
-                    <iframe src="https://player.vimeo.com/video/228646299?title=0&byline=0&portrait=0" 
+                    <iframe src="https://player.vimeo.com/video/169046621?title=0&byline=0&portrait=0" 
                             style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                             frameborder="0" 
                             allow="autoplay; fullscreen; picture-in-picture" 
@@ -33,39 +24,9 @@
                 </div>
                 <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
-            
-            <div class="project-info" data-scroll>
-                <h1>THE WALK</h1>
-                <div class="project-meta">
-                    <p>Short Film</p>
-                    <p>Duration: 12 minutes</p>
-                    <p>Year: 2018</p>
-                </div>
-                <div class="project-description">
-                    <p>A poignant exploration of memory and loss, following a woman's journey through familiar streets that now feel foreign. As she walks, memories surface and blur the line between past and present.</p>
-                </div>
-            </div>
-
-            <div class="project-gallery">
-                <img src="https://picsum.photos/800/450?random=5" alt="The Walk Still 1" data-scroll>
-                <img src="https://picsum.photos/800/450?random=6" alt="The Walk Still 2" data-scroll>
-                <img src="https://picsum.photos/800/450?random=7" alt="The Walk Still 3" data-scroll>
-                <img src="https://picsum.photos/800/450?random=8" alt="The Walk Still 4" data-scroll>
-            </div>
-
-            <div class="project-credits" data-scroll>
-                <h2>Credits</h2>
-                <ul>
-                    <li>Written & Directed by: Sara Dunlop</li>
-                    <li>Production Company: Rattling Stick</li>
-                    <li>Producer: Stuart Bentham</li>
-                    <li>DOP: Ben Fordesman</li>
-                    <li>Editor: Amanda James</li>
-                </ul>
-            </div>
 
             <div class="awards" data-scroll>
-                <h2>Awards & Festivals</h2>
+                <h2>Awards & Recognition</h2>
                 <ul>
                     <li>Official Selection - London Film Festival 2018</li>
                     <li>Best Short Film - Edinburgh International Film Festival</li>
@@ -75,6 +36,7 @@
 
         <nav class="project-navigation" data-scroll>
             <a href="./dreamlands.html">← Previous Project</a>
+        </nav>
     </main>
 
     <footer>
