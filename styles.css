@@ -734,7 +734,7 @@ footer {
 
 /* Project detail layout */
 .project-detail {
-    max-width: 100%;
+    max-width: 1400px;  /* Add max-width to match site layout */
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -743,11 +743,12 @@ footer {
 .project-hero.video {
     margin: 0 -2rem;  /* Negative margin to extend full width */
     padding: 0 2rem;  /* Add padding back to maintain content alignment */
+    max-width: calc(100% + 4rem);  /* Compensate for negative margins */
 }
 
 /* Awards section styling */
 .project-detail .awards {
-    margin: 2rem 0 !important;
+    margin: 2rem auto !important;  /* Center the awards section */
     max-width: 100% !important;
     width: 100% !important;
     text-align: left !important;
