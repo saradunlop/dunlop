@@ -663,6 +663,46 @@ footer {
     color: var(--text-color);
 }
 
+/* Awards section styling to match Recognition */
+.project-detail .awards {
+    margin: 2rem 0 !important;
+    max-width: 800px !important;
+    text-align: left !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+.project-detail .awards h2 {
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    margin-bottom: 0.75rem !important;
+    letter-spacing: 0.5px !important;
+    text-transform: none !important;
+    color: var(--text-color) !important;
+}
+
+.project-detail .awards ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.project-detail .awards li {
+    margin-bottom: 0.5rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+    color: var(--text-color) !important;
+    font-weight: normal !important;
+    text-transform: none !important;
+}
+
+/* Remove any remaining animation classes */
+.project-detail .awards.in-view {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
 /* Keep existing project-credits styles */
 .project-credits {
     max-width: 800px;
