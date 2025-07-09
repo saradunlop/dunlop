@@ -577,15 +577,17 @@ footer {
 
 .profile-image {
     width: 100%;
-    position: relative;  /* Reset any sticky positioning */
-    top: auto;  /* Reset any top positioning */
+    position: static !important;  /* Force static positioning */
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
 }
 
 .profile-image img {
     width: 100%;
     height: auto;
     display: block;
-    position: relative;  /* Ensure normal scroll behavior */
+    position: static !important;  /* Force static positioning */
 }
 
 .info-text {
@@ -848,14 +850,16 @@ footer {
     .profile-image {
         margin: 0;
         width: 100%;
-        position: relative;  /* Reset any fixed/sticky positioning */
-        z-index: 0;  /* Place image behind text */
+        position: static !important;  /* Force static positioning */
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
     }
 
     .profile-image img {
         width: 100%;
         height: auto;
-        position: relative;  /* Ensure image scrolls normally */
+        position: static !important;  /* Ensure image scrolls normally */
     }
 
     /* Project grid styles */
