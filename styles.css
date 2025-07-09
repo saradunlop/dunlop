@@ -560,31 +560,32 @@ footer {
 
 /* Info Page Styles */
 .info-page main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
 }
 
 .info-content {
-    margin-top: 3rem;
+    padding: 2rem 0;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: minmax(300px, 2fr) 3fr;
+    grid-template-columns: 1fr 2fr;
     gap: 4rem;
     align-items: start;
 }
 
 .profile-image {
-    position: sticky;
-    top: 2rem;
+    width: 100%;
+    position: relative;  /* Reset any sticky positioning */
+    top: auto;  /* Reset any top positioning */
 }
 
 .profile-image img {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;  /* Ensure normal scroll behavior */
 }
 
 .info-text {
@@ -826,11 +827,14 @@ footer {
     .info-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+        position: relative;  /* Reset any positioning context */
     }
 
     .info-text {
         padding: 0;
         margin: 0;
+        position: relative;  /* Ensure text has its own stacking context */
+        z-index: 1;  /* Place text above image */
     }
 
     .info-content {
@@ -844,11 +848,14 @@ footer {
     .profile-image {
         margin: 0;
         width: 100%;
+        position: relative;  /* Reset any fixed/sticky positioning */
+        z-index: 0;  /* Place image behind text */
     }
 
     .profile-image img {
         width: 100%;
         height: auto;
+        position: relative;  /* Ensure image scrolls normally */
     }
 
     /* Project grid styles */
