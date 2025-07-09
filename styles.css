@@ -781,7 +781,7 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         padding: 1rem;
-        background: red !important;
+        background: var(--background-color);  /* Remove the red test background */
     }
 
     header {
@@ -789,6 +789,7 @@ footer {
         flex-wrap: nowrap;
         align-items: center;
         margin-bottom: 2rem;
+        padding-right: 0.5rem;  /* Add some padding to prevent edge touching */
     }
 
     header h1 {
@@ -803,18 +804,21 @@ footer {
         align-items: center;
         margin-left: auto;
         padding-left: 1rem;
+        gap: 0.75rem;  /* Use gap instead of margins for consistent spacing */
     }
 
     nav a {
-        font-size: 0.9rem;
-        margin-left: 0.75rem;
+        font-size: 0.85rem;  /* Slightly smaller font */
+        margin-left: 0;  /* Remove margin since we're using gap */
         white-space: nowrap;
     }
 
     .theme-toggle {
-        margin-left: 0.75rem;
-        width: 1rem;
-        height: 1rem;
+        margin-left: 0;  /* Remove margin since we're using gap */
+        width: 0.9rem;  /* Make toggle slightly smaller */
+        height: 0.9rem;
+        position: relative;
+        top: 0;  /* Reset the top position */
     }
 
     .hero-text {
