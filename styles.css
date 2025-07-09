@@ -488,22 +488,28 @@ footer {
     }
 
     header {
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
     }
 
-    nav {
+    header h1 {
+        flex: 0 0 auto;
+    }
+
+    header nav {
+        flex: 1 1 auto;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        gap: 1rem;
     }
 
     nav a {
-        margin-left: 1rem;  /* Reduced margin for mobile */
+        margin-left: 0;
     }
 
     .theme-toggle {
-        margin-left: 1rem;  /* Reduced margin for mobile */
+        margin-left: 0;
     }
 
     .hero-text {
