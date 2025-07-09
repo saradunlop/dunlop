@@ -490,24 +490,21 @@ footer {
     header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     header h1 {
-        flex: 0 0 auto;
+        flex-shrink: 0;
     }
 
-    header nav {
-        flex: 1 1 auto;
+    nav {
+        margin-left: auto;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
         gap: 1rem;
     }
 
-    nav a {
-        margin-left: 0;
-    }
-
+    nav a,
     .theme-toggle {
         margin-left: 0;
     }
