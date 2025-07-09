@@ -487,9 +487,32 @@ footer {
         padding: 1rem;
     }
 
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a {
+        margin-left: 1rem;  /* Reduced margin for mobile */
+    }
+
+    .theme-toggle {
+        margin-left: 1rem;  /* Reduced margin for mobile */
+    }
+
     .hero-text {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin: 4rem 0;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
     .project-grid,
