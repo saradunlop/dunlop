@@ -120,11 +120,13 @@ h1 {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.5px;
+    text-transform: none;  /* Ensure no automatic capitalization */
 }
 
 h1 a {
     color: inherit;
     text-decoration: none;
+    text-transform: none;  /* Ensure no automatic capitalization */
 }
 
 nav a {
