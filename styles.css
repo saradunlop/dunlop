@@ -485,6 +485,7 @@ footer {
 @media (max-width: 768px) {
     body {
         padding: 1rem;
+        background: red !important; /* Test to verify media query works */
     }
 
     header {
