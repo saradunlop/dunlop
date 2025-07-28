@@ -6,7 +6,6 @@
     <title>Dreamlands - Sara Dunlop</title>
     <link rel="stylesheet" href="../styles.css">
     <script src="../scripts/include-components.js" defer></script>
-    <script src="../scripts/image-loader.js" defer></script>
     <script src="../scripts.js" defer></script>
 </head>
 <body class="project-page">
@@ -14,7 +13,7 @@
 
     <main>
         <article class="project-detail">
-            <div class="project-hero video">
+            <div class="project-hero video" data-scroll>
                 <div style="padding:56.25% 0 0 0;position:relative;">
                     <iframe src="https://player.vimeo.com/video/228646299?title=0&byline=0&portrait=0" 
                             style="position:absolute;top:0;left:0;width:100%;height:100%;" 
@@ -25,12 +24,12 @@
                 </div>
                 <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
-
-            <nav class="project-navigation">
-                <a href="./dreamers.html" class="prev-project">← Dreamers</a>
-                <a href="./high.html" class="next-project">High →</a>
-            </nav>
         </article>
+
+        <nav class="project-navigation" data-scroll>
+            <a href="./dreamers.html" class="prev-project">← Dreamers</a>
+            <a href="./high.html" class="next-project">High →</a>
+        </nav>
     </main>
 
     <footer>
