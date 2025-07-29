@@ -85,11 +85,11 @@ header {
     opacity: 0;
 }
 
-body.dark-mode .theme-toggle .sun-icon {
+[data-theme="dark"] .theme-toggle .sun-icon {
     opacity: 0;
 }
 
-body.dark-mode .theme-toggle .moon-icon {
+[data-theme="dark"] .theme-toggle .moon-icon {
     opacity: 1;
 }
 
