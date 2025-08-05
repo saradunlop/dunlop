@@ -109,7 +109,7 @@ header {
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: none;
@@ -802,7 +802,7 @@ footer {
 
     header h1 {
         flex: 0 1 auto;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         white-space: nowrap;
     }
 
