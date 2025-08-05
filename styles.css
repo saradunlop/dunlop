@@ -106,17 +106,21 @@ header {
     border: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
 h1 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.5px;
-    text-transform: none;  /* Ensure no automatic capitalization */
+    text-transform: none;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 h1 a {
     color: inherit;
     text-decoration: none;
-    text-transform: none;  /* Ensure no automatic capitalization */
+    text-transform: none;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 nav {
