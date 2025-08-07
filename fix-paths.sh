@@ -36,3 +36,7 @@ sed -i '' 's|href="/index.html"|href="../index.html"|g' components/header.html
 sed -i '' 's|href="/narrative/|href="../narrative/|g' components/header.html
 sed -i '' 's|href="/commercial/|href="../commercial/|g' components/header.html
 sed -i '' 's|href="/info/|href="../info/|g' components/header.html 
+
+# Update all component paths to remove /dunlop/
+find . -type f -name "*.html" -exec sed -i '' 's|data-component="/dunlop/components/header.html"|data-component="/components/header.html"|g' {} +
+find . -type f -name "*.html" -exec sed -i '' 's|href="/dunlop/|href="/|g' {} + 
